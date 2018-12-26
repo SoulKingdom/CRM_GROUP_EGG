@@ -1,0 +1,14 @@
+jdbcTemplate=net.wanho.util.JDBCTemplate
+iTransaction=net.wanho.transaction.impl.TransManagerImpl
+ProductDaoI=net.wanho.dao.product.impl.ProductDaoImpl
+ProductTypeDaoI=net.wanho.dao.product.impl.ProductTypeDaoImpl
+OrdersDaoI=net.wanho.dao.product.impl.OrdersDaoImpl
+ProductInventoryDaoI=net.wanho.dao.product.impl.ProductInventoryDaoImpl
+StoreDaoI=net.wanho.dao.product.impl.StoreDaoImpl
+OrdersDetailDaoI=net.wanho.dao.product.impl.OrdersDetailDaoImpl
+ProductServiceI=net.wanho.service.product.impl.ProductServiceImpl
+ProductTypeServiceI=net.wanho.service.product.impl.ProductTypeServiceImpl
+SalesServiceI=net.wanho.service.product.impl.SalesServiceImpl
+ProductInventoryServiceI=net.wanho.service.product.impl.ProductInventoryServiceImpl
+StoreServiceI=net.wanho.service.product.impl.StoreServiceImpl
+OrdersDetailServicesI=net.wanho.service.product.impl.OrdersDetailServicesImpl

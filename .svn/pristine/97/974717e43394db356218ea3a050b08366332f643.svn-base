@@ -1,0 +1,53 @@
+﻿<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<jsp:include page="/common.jsp"></jsp:include>
+</head>
+
+<body class="navbar-top">
+	<div class="modal-shiftfix">
+		<jsp:include page="/menu.jsp"></jsp:include>
+		<div class="container-fluid main-content">
+			<div class="widget-container fluid-height clearfix">
+				<div class="heading clearfix">
+					<i class="icon-table"></i> 添加子类 &nbsp; &nbsp; &nbsp; <i class="icon-plus"></i> ${typeName }
+				</div>
+				<form action="productType.do" method="get">
+				<input type="hidden" name="method" value="add" />
+					<div class="widget-content padded clearfix">
+						<div class="container">
+							<div class="col-sm-8">
+								<label class="control-label col-sm-2"
+									for="customer-customer_name">类别名称</label>
+								<div class="col-sm-8">
+									<input type="text" id="description" class="form-control"
+										name="typeName" placeholder="类别名称">
+								</div>
+							</div>
+							<br /> <br /> <br />
+							<div class="col-sm-8">
+								<label class="control-label col-sm-2"
+									for="customer-customer_name">类别说明</label>
+								<div class="col-sm-8">
+									<input type="text" id="description" class="form-control"
+										name="typeDescription" placeholder="类别说明">
+								</div>
+							</div>
+							<input type="hidden" name="parentTypeId" value="${typeId }" />
+						</div>
+						<br /> <br />
+						<button type="submit" class="btn btn-success "
+							style="margin-left: 400px;">
+							<i class="glyphicon glyphicon-add"></i>创建
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
